@@ -1,3 +1,14 @@
+// preloader
+
+let preloader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        preloader.style.display = "none"
+    }, 3000)
+})
+
+// global variables
+
 let title = document.getElementById("title")
 let price = document.getElementById("price")
 let taxes = document.getElementById("taxes")
