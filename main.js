@@ -79,6 +79,7 @@ function submit() {
             category: category.value
         }
         products[updateItem] = product;
+        localStorage.setItem("products", JSON.stringify(products))
         showData();
         create.innerHTML = `create`
         mode = "create"
